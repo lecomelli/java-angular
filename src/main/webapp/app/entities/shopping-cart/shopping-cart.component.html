@@ -34,7 +34,7 @@
                 <td>{{shoppingCart.paymentReference}}</td>
                 <td>
                     <div *ngIf="shoppingCart.customerDetails">
-                        <a [routerLink]="['../customer-details', shoppingCart.customerDetails?.id, 'view' ]" >{{shoppingCart.customerDetails?.id}}</a>
+                        <a [routerLink]="['../customer-details', shoppingCart.customerDetails?.id, 'view' ]" >{{shoppingCart.customerDetails?.user?.firstName}}</a>
                     </div>
                 </td>
                 <td class="text-right">
